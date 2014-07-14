@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/css" href="file:/home/gabriel/Desktop/europass/europass/europass.css"?>
+
+<europass orderid="889923" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/home/gabriel/Desktop/europass/europass/europass.xsd">
+    <personalInformation>
+        <name>
+            <firstname>Livaina</firstname>
+            <surname/>
+        </name>
+        <Adress>
+            <street>Sta</street>
+            <number>21</number>
+            <postalCode>sdad</postalCode>
+            <city>adsa</city>
+            <country>ada</country>
+        </Adress>
+        <telephone>
+            <type attribute="Home"/>
+            <telNumber>0745554125</telNumber>
+        </telephone>
+        
+        <email/>
+        <website/>
+        <instantMessaging>
+            <provider attribute="Skype"/>
+            <IMusername/>
+        </instantMessaging>
+        <extraFields>
+            <sex>Male</sex>
+            <dateOfBirth>
+                <day/>
+                <month/>
+                <year/>
+            </dateOfBirth>
+            <nationality/>
+        </extraFields>
+    </personalInformation>
+    
+</europass> 

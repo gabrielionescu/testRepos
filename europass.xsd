@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="europass">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- personal information -->
+                <xs:element name="personalInformation">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- name -->
+                            <xs:element name="name">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="firstname" type="xs:string" />
+                                        <xs:element name="surname"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- end name  == begin adress-->
+                            <xs:element name="Adress">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!-- street and number -->
+                                        <xs:sequence>
+                                            <xs:element name="street"/>
+                                            <xs:element name="number"/>
+                                        </xs:sequence>
+                                        <xs:element name="postalCode"/>
+                                        <xs:element name="city"/>
+                                        <!-- thi will be selected from a dropdown list -->
+                                        <xs:element name="country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- end adress -->
+                            <!-- telephone -->
+                            <xs:element name="telephone">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="type"/>
+                                        <xs:element name="telNumber"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="email"/>
+                            <xs:element name="website"/>
+                            <xs:element name="instantMessaging">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="provider"/>
+                                        <xs:element name="IMusername"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="extraFields">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="sex">
+                                         
+                                        </xs:element>
+                                        <xs:element name="dateOfBirth">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="day"/>
+                                                  <xs:element name="month"/>
+                                                  <xs:element name="year"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="nationality"/>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+
+            <xs:attribute name="orderid" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
